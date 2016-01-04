@@ -18,38 +18,47 @@ $p-font: normal 900 32px/40px 'roboto slab';
 
 $body-default: normal 300 1.8em/1.6em 'Roboto';
 
-$gray-500: #263238;
-$gray-400: #445A64;
-$gray-300: #5F7D8C;
-$gray-200: #8FA4AF;	
-$gray-100: #CFD8DC;
-$gray-000: #ECEFF1;
+$gray-black: #222;
+$gray-500: #333131;
+$gray-400: #595757; 
+$gray-300: #7E7D7C;
+$gray-200: #A4A3A2;
+$gray-100: #C9C9C7;
+$gray-000: #EFEFED;
 //
-$red-500: #BC0D00;
-$red-400: #D21202;
-$red-300: #E81716;
-$red-200: #F56B5C;	
-$red-100: #F89985;
-$red-000: #FEE0DB;
+
+$red-black: #8B0600;
+$red-500: #B2130C;
+$red-400: #D52C28;
+$red-300: #F7402D;
+$red-200: #E77271;
+$red-100: #F19999;
+$red-000: #FFEBEE;
+
 //
+$blue-black: #003F74;
 $blue-500: #00559D;
 $blue-400: #0086D4;
 $blue-300: #00A7F7;
-$blue-200: #7DD3FC;	
+$blue-200: #7DD3FC;
 $blue-100: #B1E5FD;
 $blue-000: #E0F5FF;
+
 //
-$green-500: #065400;
-$green-400: #007F00;
-$green-300: #1B9C17;
-$green-200: #6CD46B;	
-$green-100: #A0E9A0;
-$green-000: #CFF9CD;
+$green-black: #033F24;
+$green-500: #025932;
+$green-400: #01834B;
+$green-300: #00AD63;
+$green-200: #4CC27D;
+$green-100: #92D6AE;
+$green-000: #C5E3D2;
+
 //
-$orange-500: #E34F00;
-$orange-400: #F16C00;
-$orange-300: #F77C00;
-$orange-200: #FF9901;	
+$orange-black: #7B2B00;
+$orange-500: #B64000;
+$orange-400: #DC6300;
+$orange-300: #FF8000;
+$orange-200: #FF9901;
 $orange-100: #FFCD7A;
 $orange-000: #FFF3DF;
 
@@ -225,52 +234,57 @@ hr { display: block;
 
 
 .gray-chips{
-	.col-chip:nth-child(1) .card{background: $gray-500;}
-	.col-chip:nth-child(2) .card{background: $gray-400;}
-	.col-chip:nth-child(3) .card{background: $gray-300;}
-	.col-chip:nth-child(4) .card{background: $gray-200;}
-	.col-chip:nth-child(5) .card{background: $gray-100;}
-	.col-chip:nth-child(6) .card{background: $gray-000;}
+	.col-chip:nth-child(1) .card{background: $gray-black;}
+	.col-chip:nth-child(2) .card{background: $gray-500;}
+	.col-chip:nth-child(3) .card{background: $gray-400;}
+	.col-chip:nth-child(4) .card{background: $gray-300;}
+	.col-chip:nth-child(5) .card{background: $gray-200;}
+	.col-chip:nth-child(6) .card{background: $gray-100;}
+	.col-chip:nth-child(7) .card{background: $gray-000;}
 }
 
 
 
 .red-chips{
-	.col-chip:nth-child(1) .card{background: $red-500;}
-	.col-chip:nth-child(2) .card{background: $red-400;}
-	.col-chip:nth-child(3) .card{background: $red-300;}
-	.col-chip:nth-child(4) .card{background: $red-200;}
-	.col-chip:nth-child(5) .card{background: $red-100;}
-	.col-chip:nth-child(6) .card{background: $red-000;}
+	.col-chip:nth-child(1) .card{background: $red-black;}
+	.col-chip:nth-child(2) .card{background: $red-500;}
+	.col-chip:nth-child(3) .card{background: $red-400;}
+	.col-chip:nth-child(4) .card{background: $red-300;}
+	.col-chip:nth-child(5) .card{background: $red-200;}
+	.col-chip:nth-child(6) .card{background: $red-100;}
+	.col-chip:nth-child(7) .card{background: $red-000;}
 }
 
 
 .blue-chips{
-	.col-chip:nth-child(1) .card{background: $blue-500;}
-	.col-chip:nth-child(2) .card{background: $blue-400;}
-	.col-chip:nth-child(3) .card{background: $blue-300;}
-	.col-chip:nth-child(4) .card{background: $blue-200;}
-	.col-chip:nth-child(5) .card{background: $blue-100;}
-	.col-chip:nth-child(6) .card{background: $blue-000;}
+	.col-chip:nth-child(1) .card{background: $blue-black;}
+	.col-chip:nth-child(2) .card{background: $blue-500;}
+	.col-chip:nth-child(3) .card{background: $blue-400;}
+	.col-chip:nth-child(4) .card{background: $blue-300;}
+	.col-chip:nth-child(5) .card{background: $blue-200;}
+	.col-chip:nth-child(6) .card{background: $blue-100;}
+	.col-chip:nth-child(7) .card{background: $blue-000;}
 }
 
 
 .green-chips{
-	.col-chip:nth-child(1) .card{background: $green-500;}
-	.col-chip:nth-child(2) .card{background: $green-400;}
-	.col-chip:nth-child(3) .card{background: $green-300;}
-	.col-chip:nth-child(4) .card{background: $green-200;}
-	.col-chip:nth-child(5) .card{background: $green-100;}
-	.col-chip:nth-child(6) .card{background: $green-000;}
+	.col-chip:nth-child(1) .card{background: $green-black;}
+	.col-chip:nth-child(2) .card{background: $green-500;}
+	.col-chip:nth-child(3) .card{background: $green-400;}
+	.col-chip:nth-child(4) .card{background: $green-300;}
+	.col-chip:nth-child(5) .card{background: $green-200;}
+	.col-chip:nth-child(6) .card{background: $green-100;}
+	.col-chip:nth-child(7) .card{background: $green-000;}
 }
 
 .orange-chips{
-	.col-chip:nth-child(1) .card{background: $orange-500;}
-	.col-chip:nth-child(2) .card{background: $orange-400;}
-	.col-chip:nth-child(3) .card{background: $orange-300;}
-	.col-chip:nth-child(4) .card{background: $orange-200;}
-	.col-chip:nth-child(5) .card{background: $orange-100;}
-	.col-chip:nth-child(6) .card{background: $orange-000;}
+	.col-chip:nth-child(1) .card{background: $orange-black;}
+	.col-chip:nth-child(2) .card{background: $orange-500;}
+	.col-chip:nth-child(3) .card{background: $orange-400;}
+	.col-chip:nth-child(4) .card{background: $orange-300;}
+	.col-chip:nth-child(5) .card{background: $orange-200;}
+	.col-chip:nth-child(6) .card{background: $orange-100;}
+	.col-chip:nth-child(7) .card{background: $orange-000;}
 }
 
 
@@ -300,6 +314,7 @@ hr { display: block;
 		font-size: 18px;
 		font-weight: 200;
 		padding: 0px;
+		text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
 	}
 	h2{
 		margin-top: -2px;
@@ -319,7 +334,7 @@ hr { display: block;
 }
 
 // interaction
-$section-h1: normal 100 24px/0px 'roboto';
+$section-h1: normal 300 24px/0px 'roboto';
 
 .interaction-row{
 	height: 300px;
