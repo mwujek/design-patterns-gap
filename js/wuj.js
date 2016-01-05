@@ -68,20 +68,46 @@ $(document).ready(function() {
 		console.log('stop!');
 	});
 
-	// draggable icons
-	// var handleHorz = $('#horz-handle');
-	// var containerHorz = handleHorz.parent();
-	// var handleVert = $('#vert-handle');
-	// var containerVert = handleVert.parent();
-	// handleVert.draggable({
-	// 	axis: "x",
-	// 	containment: "parent"
-	// });
+	// expand code snippet
+	// first close everything 
+	$('.codepen-wrapper').each(function() {
+		
+		if($(this).hasClass('logo-family')){
+			//$(this).find('img').toggleClass('hide-snippet');
+			//$(this).toggleClass('hide-snippet');
+		} else {
+			//$(this).toggleClass('hide-snippet');
+		}
+	});
 
-	// handleHorz.draggable({
-	// 	axis: "y",
-	// 	containment: "parent"
-	// });
+
+	$('.expand-code-btn').each(function() {
+		var btn = $(this);
+		btn.data.active = false;
+
+		//button action
+		btn.click(function() {
+			var container = $(this).parent().find('.codepen-wrapper');
+			$('.hide-snippet').removeClass('hide-snippet');
+			if(container.hasClass('logo-family') ){
+				container.find('img').toggleClass('hide-img');
+				container.toggleClass('hide-snippet');	
+			} else{
+				container.toggleClass('hide-snippet');	
+			}
+			
+			if( $(this).data.active === false){
+				$(this).find('em').text('Hide');
+				$(this).data.active = true;
+			} else {
+				$(this).find('em').text('View');
+				$(this).data.active = false;
+			} 
+	});
+	}); 
+
+
+	
 
 	// expand contract toggles
 	var toggleIcons = $('.toggle-icon');
@@ -294,4 +320,99 @@ $('a.noEvent').click(function(event) {
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
+
+
+// waypoints
+var setWaypoints = function(){
+var navList = $('nav ul');
+var navElements = $('nav ul li');
+$('.waypoint-marker').each(function(index, el) {
+	var el = $(this);
+
+	var waypoint = el.waypoint({
+		//offset: 10,
+		handler: function(direction) {
+			//console.log(this.element.id + ' hit');
+			navElements.removeClass('current-section');
+			//console.log(navElements);
+			var key = this.key;
+			console.log(this.key);
+			switch (key) {
+ 
+			    case 'waypoint-0': navList.find('li:nth-child(1)').addClass('current-section');
+			    break;
+			 
+			    case 'waypoint-1': navList.find('li:nth-child(2)').addClass('current-section');
+			    break;
+
+			    case 'waypoint-2': navList.find('li:nth-child(3)').addClass('current-section');
+			    break;
+
+			    case 'waypoint-3': navList.find('li:nth-child(4)').addClass('current-section');
+			    break;
+
+			    case 'waypoint-4': navList.find('li:nth-child(5)').addClass('current-section');
+			    break;
+
+			    case 'waypoint-5': navList.find('li:nth-child(6)').addClass('current-section');
+			    break;
+
+			    case 'waypoint-6': navList.find('li:nth-child(7)').addClass('current-section');
+			    break;
+
+			    case 'waypoint-7': navList.find('li:nth-child(8)').addClass('current-section');
+			    break;
+
+			    case 'waypoint-8': navList.find('li:nth-child(9)').addClass('current-section');
+			    break;
+
+			    case 'waypoint-9': navList.find('li:nth-child(10)').addClass('current-section');
+			    break;
+
+			    case 'waypoint-10': navList.find('li:nth-child(11)').addClass('current-section');
+			    break;
+
+			    case 'waypoint-11': navList.find('li:nth-child(12)').addClass('current-section');
+			    break;
+			 
+
+
+			    break;
+			 
+			    // And so on...
+ 
+			}
+			}
+		})
+	});
+}
+
+var smoothScroll= function(){
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+      	if(target.offset().top - window.scrollY > 0){
+      		// going down
+      		$('html,body').animate({
+          		scrollTop: target.offset().top + 100
+        	}, 600);
+      	} else {
+      		// going up
+      		$('html,body').animate({
+          		scrollTop: target.offset().top - 100
+        	}, 600);
+      	}
+        
+        return false;
+      }
+    }
+  });
+
+}
+$(window).load(function() {
+	smoothScroll();
+	setWaypoints();
+});
 
