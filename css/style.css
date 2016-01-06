@@ -100,7 +100,7 @@ nav.sidebar {
         transition: 0.3s color,0.3s border;
         border-bottom: 1px solid #fff;
         padding-bottom: 1px;
-        text-transform: uppercase; }
+        text-transform: lowercase; }
         nav.sidebar ul li a:hover {
           color: #333131;
           border-bottom: 1px solid #333131; }
@@ -116,7 +116,7 @@ section {
 .section-title {
   font: normal 600 2em/2em "roboto";
   margin-bottom: 6px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   letter-spacing: 1px; }
 
 hr {
@@ -126,6 +126,17 @@ hr {
   border-top: 1px solid #ccc;
   margin: 0 0 40px 0;
   padding: 0; }
+
+.typography-section .col {
+  vertical-align: middle; }
+  .typography-section .col:first-child {
+    width: 40%; }
+    .typography-section .col:first-child p {
+      padding-right: 25px; }
+.typography-section img {
+  max-width: 100%;
+  margin: 0 auto;
+  display: block; }
 
 .gray-chips .col-chip:nth-child(1) .card {
   background: #222; }
@@ -921,3 +932,28 @@ a.collapsed {
 
 .hide-img {
   height: 160px !important; }
+
+.download-section {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  background: #EFEFED;
+  padding: 20px 20px;
+  border-radius: 10px;
+  margin-top: 30px; }
+  .download-section span {
+    font-weight: 600; }
+  .download-section ul {
+    display: inline-block;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 20px; }
+    .download-section ul li {
+      display: inline-block;
+      padding-right: 16px;
+      border-right: 1px solid #A4A3A2;
+      padding-left: 12px;
+      text-align: center; }
+      .download-section ul li:last-child {
+        border: none; }

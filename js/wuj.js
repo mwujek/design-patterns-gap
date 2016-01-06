@@ -84,25 +84,30 @@ $(document).ready(function() {
 	$('.expand-code-btn').each(function() {
 		var btn = $(this);
 		btn.data.active = false;
-
+		console.log($(this).data.active)
 		//button action
 		btn.click(function() {
+			console.log($(this).data.active)
+			var thisBtn = $(this);
 			var container = $(this).parent().find('.codepen-wrapper');
-			$('.hide-snippet').removeClass('hide-snippet');
+
+			if( thisBtn.data.active === false){
+				thisBtn.find('em').text('Hide');
+				thisBtn.data.active = true;
+			} else {
+				thisBtn.find('em').text('View');
+				thisBtn.data.active = false;
+			}
+
 			if(container.hasClass('logo-family') ){
 				container.find('img').toggleClass('hide-img');
 				container.toggleClass('hide-snippet');	
 			} else{
 				container.toggleClass('hide-snippet');	
+
 			}
 			
-			if( $(this).data.active === false){
-				$(this).find('em').text('Hide');
-				$(this).data.active = true;
-			} else {
-				$(this).find('em').text('View');
-				$(this).data.active = false;
-			} 
+			 
 	});
 	}); 
 

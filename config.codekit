@@ -10488,6 +10488,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/type.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.13684e+06,
+		"inputAbbreviatedPath": "\/img\/type.jpg",
+		"outputAbbreviatedPath": "\/img\/type.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -10521,8 +10532,8 @@
 		},
 	"\/js\/wuj.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/js\/wuj.js",
 		"outputAbbreviatedPath": "\/js\/min\/wuj-min.js",
 		"outputPathIsOutsideProject": 0,
