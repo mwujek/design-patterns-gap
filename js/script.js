@@ -80,22 +80,17 @@ $(document).ready(function() {
 		}
 	});
 
+	var toggleSnippet = function(el){
 
-	$('.expand-code-btn').each(function() {
-		var btn = $(this);
-		btn.data.active = false;
-		console.log($(this).data.active)
-		//button action
-		btn.click(function() {
-			console.log($(this).data.active)
-			var thisBtn = $(this);
-			var container = $(this).parent().find('.codepen-wrapper');
+			console.log(el.data.active);
+			var thisBtn = el;
+			var container = el.parent().find('.codepen-wrapper');
 
 			if( thisBtn.data.active === false){
-				thisBtn.find('em').text('Hide');
+				//thisBtn.find('em').text('Hide');
 				thisBtn.data.active = true;
 			} else {
-				thisBtn.find('em').text('View');
+				//thisBtn.find('em').text('View');
 				thisBtn.data.active = false;
 			}
 
@@ -104,12 +99,21 @@ $(document).ready(function() {
 				container.toggleClass('hide-snippet');	
 			} else{
 				container.toggleClass('hide-snippet');	
-
 			}
-			
-			 
-	});
-	}); 
+	}
+
+
+
+	$('.expand-code-btn').each(function() {
+		var btn = $(this);
+		btn.data.active = false;
+		console.log($(this).data.active)
+		//button action
+		btn.click(function() {
+			var el = $(this)
+			toggleSnippet(el);
+		}); // end of click
+	}); // end of each statement
 
 
 	

@@ -9,6 +9,7 @@
 }
 
 
+
 $source-sans-pro: normal 500 24px/32px 'Roboto';
 $roboto: normal 600 24px/32px 'roboto';
 
@@ -69,6 +70,7 @@ $orange-000: #FFF3DF;
 code{
 	font-family: 'roboto mono';
 	font-weight: 400;
+	color: $orange-400;
 }
 body{
 	font: $body-default;
@@ -178,13 +180,27 @@ nav.sidebar{
 				transition: 0.3s color,0.3s border;
 				border-bottom: 1px solid #fff;
 				padding-bottom: 1px;
-				text-transform: lowercase;
+				text-transform: capitalize;
 				&:hover{
 					color:$gray-500;
 					border-bottom: 1px solid $gray-500;
 				}
 			}
 		}
+	}
+}
+
+
+// gif bucket
+.gif-bucket{
+	height: auto;
+	width: auto;
+	//border: 1px solid $gray-100;
+	margin: 0 auto;
+	text-align: center;
+	img{
+		margin: 0 auto;
+		border: 1px solid $gray-000;
 	}
 }
 
@@ -205,6 +221,36 @@ nav.sidebar{
 		margin-bottom: -6px;
 	}
 }
+
+// modal
+
+
+#section-modal{
+	.btn-col{text-align: center;}
+}
+
+// lightbox
+#section-lightbox{
+	//.row{height: 300px;}
+	.lightbox-img-link{
+		max-width: 50%;
+	}
+	.lightbox-div{
+		text-align: center;
+	}
+}
+
+// accordion section
+#section-accordion{
+	.accordion-example{
+		background: $blue-300;
+		height: 300px;
+		width:90%;
+		margin: 0 auto;
+	}
+	.col{vertical-align: middle;}
+}
+
 
 
 // section titles & layout
@@ -355,7 +401,7 @@ hr { display: block;
 }
 
 // interaction
-$section-h1: normal 300 24px/0px 'roboto';
+$section-h1: normal 400 24px/0px 'roboto';
 
 .interaction-row{
 	height: 300px;
@@ -724,7 +770,7 @@ $btn-border: 1px solid $gray-200;
 		z-index: 100;
 		font-size: 18px;
 		font-weight: 100;
-		//color: white;
+		code{color: #333;}
 	}
 	
 	span.transition-box{

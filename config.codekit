@@ -10426,7 +10426,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 77423,
+		"initialSize": 71479,
 		"inputAbbreviatedPath": "\/img\/full-f.png",
 		"outputAbbreviatedPath": "\/img\/full-f-01-03.png",
 		"outputPathIsOutsideProject": 0,
@@ -10530,12 +10530,12 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/js\/wuj.js": {
+	"\/js\/script.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 1,
-		"inputAbbreviatedPath": "\/js\/wuj.js",
-		"outputAbbreviatedPath": "\/js\/min\/wuj-min.js",
+		"inputAbbreviatedPath": "\/js\/script.js",
+		"outputAbbreviatedPath": "\/js\/min\/script-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,

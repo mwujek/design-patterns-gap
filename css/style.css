@@ -15,7 +15,8 @@
 
 code {
   font-family: 'roboto mono';
-  font-weight: 400; }
+  font-weight: 400;
+  color: #DC6300; }
 
 body {
   font: normal 300 1.8em/1.6em "Roboto";
@@ -100,13 +101,38 @@ nav.sidebar {
         transition: 0.3s color,0.3s border;
         border-bottom: 1px solid #fff;
         padding-bottom: 1px;
-        text-transform: lowercase; }
+        text-transform: capitalize; }
         nav.sidebar ul li a:hover {
           color: #333131;
           border-bottom: 1px solid #333131; }
 
+.gif-bucket {
+  height: auto;
+  width: auto;
+  margin: 0 auto;
+  text-align: center; }
+  .gif-bucket img {
+    margin: 0 auto;
+    border: 1px solid #EFEFED; }
+
 .color-section .row {
   margin-bottom: -6px; }
+
+#section-modal .btn-col {
+  text-align: center; }
+
+#section-lightbox .lightbox-img-link {
+  max-width: 50%; }
+#section-lightbox .lightbox-div {
+  text-align: center; }
+
+#section-accordion .accordion-example {
+  background: #00A7F7;
+  height: 300px;
+  width: 90%;
+  margin: 0 auto; }
+#section-accordion .col {
+  vertical-align: middle; }
 
 section {
   margin: 60px auto; }
@@ -259,7 +285,7 @@ hr {
 .interaction-section .col {
   vertical-align: middle; }
   .interaction-section .col h1 {
-    font: normal 300 24px/0px "roboto"; }
+    font: normal 400 24px/0px "roboto"; }
 
 .interaction-bucket {
   width: 90%;
@@ -514,6 +540,8 @@ code {
     z-index: 100;
     font-size: 18px;
     font-weight: 100; }
+    .transition-box-demo h2 code, .transition-box-demo-short h2 code {
+      color: #333; }
   .transition-box-demo span.transition-box, .transition-box-demo-short span.transition-box {
     height: 50px;
     position: absolute;
