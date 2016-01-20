@@ -898,6 +898,13 @@ a.collapsed {
   .expand-code-btn em {
     font-style: normal; }
 
+.coming-soon {
+  opacity: 0.5;
+  cursor: not-allowed !important; }
+  .coming-soon:active {
+    background: #EFEFED;
+    box-shadow: inset 1px 1px 5px white; }
+
 .codepen-wrapper {
   overflow: hidden;
   height: 0px;

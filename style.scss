@@ -574,6 +574,8 @@ $toggle-container-height: 32px;
 	}
 
 
+
+
 // draging drag layout container demo
 
 .drag-demo{
@@ -1206,6 +1208,18 @@ a.collapsed{
 	}
 
 }
+
+.coming-soon{
+	opacity: 0.5;
+	cursor: not-allowed !important;
+	&:active{
+		background: $gray-000;
+		box-shadow: inset 1px 1px 5px rgba(255,255,255,1);
+	}
+
+}
+
+
 .code-snippet-container{}
 .codepen-wrapper{
 	overflow: hidden;

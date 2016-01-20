@@ -104,7 +104,7 @@ $(document).ready(function() {
 
 
 
-	$('.expand-code-btn').each(function() {
+	$('.expand-code-btn:not(.coming-soon)').each(function() {
 		var btn = $(this);
 		btn.data.active = false;
 		console.log($(this).data.active)
